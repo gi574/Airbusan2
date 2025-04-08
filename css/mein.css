@@ -1,0 +1,1777 @@
+/* 헤더 상단 스타일 */
+.header-top {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 6px 7.4%;
+    gap: 15px;
+}
+.h_1{
+    display: none;
+}
+
+.header-top a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+}
+
+.header-top img {
+    height: 16px;
+}
+
+/* 헤더 하단 스타일 */
+.header-below {
+    height: 54px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 7.4%;
+    background-color: #fff;
+    border-bottom: 2px solid #ddd;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.logo img {
+    height: 34px;
+}
+
+.logo ul {
+    display: flex;
+    list-style: none;
+    gap: 70px;
+    margin: 0;
+    padding: 0;
+}
+
+.logo ul li {
+    cursor: pointer;
+    font-weight: bold;
+    color: #000000;
+    position: relative;
+}
+
+.logo ul li:hover {
+    color: #003D82 !important;
+}
+
+
+.logo ul li:hover::after {
+    width: 100%;
+}
+
+.header_img {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.header_img img {
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.header_img img:hover {
+    transform: scale(1.1);
+}
+
+/* 섹션1 */
+#section_1 {
+    position: relative;
+    width: 100%;
+    height: 76vh;
+    overflow: hidden;
+}
+
+/* 배경 이미지 */
+.background-image {
+    background-image: url(../img/section-1.png); 
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    padding: 5% 8%;
+}
+
+/* 전체 컨텐츠 박스 */
+.content-container {
+    width: 100%;
+   
+}
+
+/* 타이틀 영역 */
+.hero-text {
+    color: #000000;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.hero-text h1 {
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.hero-text p {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+/* 예약 박스 */
+.reservation-box {
+    height: 330px;
+    border-radius: 15px;
+    
+}
+
+/* 탭 스타일 */
+.tabs {
+    display: flex;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    overflow: hidden;
+}
+
+.tabs button {
+    background-color:#1E409A;
+    color: #ffffff;
+    border-radius: 15px 15px 0 0;
+    border: none;
+    padding: 12px 20px;
+    width: 25%;
+    height: 64px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.tabs button.active {
+    background-color: #ffffff;
+}
+.tabs :nth-child(1){
+    color: #000000;
+
+}
+
+
+/* 예약 타입 */
+.booking-type {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+.trip-options a{
+    font-size: 18px;
+    font-weight: 400;
+    color: rgb(0, 0, 0, 0.9);
+    position: relative;         
+    text-decoration: none;           
+    border-radius: 5px;         
+    transition: color 0.3s ease;
+}
+.trip-options a:target{
+    color: #003D82;       
+}
+/* 밑줄 스타일 */
+.trip-options a::after {
+    content: "";                
+    position: absolute;
+    bottom: -2px;              
+    left: 0;                 
+    right: 0;               
+    height: 1.5px;                
+    background-color: #1E409A;
+    opacity: 0;                 
+    transition: opacity 0.3s ease-in-out; 
+}
+
+/* 활성화 및 호버 시 밑줄 표시 */
+.trip-options a:hover::after,
+.trip-options a.active1::after {
+    opacity: 1;                 
+}
+
+.trip-options :nth-child(1){
+    margin-left: 35px;
+}
+
+.booking-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 286px;
+    padding: 48px 40px;
+    background-color: #ffffff;
+    border-radius: 0 0 20px 20px;
+}
+.booking_btn{
+    border: 0.5px solid rgb(0, 0, 0, 0.4);
+    border-radius: 50px;
+    width: 292px;
+    height: 50px;
+}
+.booking_btn :nth-child(2){
+    color: #000000;
+    font-size: 18px;
+    font-weight: 400;
+    background-color: #ffffff;
+    border: none;
+    margin-left: 40px;
+}
+
+.booking-type .active_3 {
+    background-color: #1E409A;
+    color: #fff;
+    padding: 8px 15px;
+    height: 50px;
+    border-radius: 50px;
+    width: 130px;
+    height: 49px;
+    border: none;
+    font-size: 18px;
+    font-weight: 400;
+
+}
+.input-row>img{
+    width: 42px;
+    height: 42px;
+
+}
+.booking-content_1{
+    display: flex;
+    justify-content: space-between;
+}
+/* 일반/편도/다구간 */
+.trip-options {
+    display: flex;
+    gap: 30px;
+    margin: 15px 0;
+}
+
+.trip-options span {
+    cursor: pointer;
+}
+.input-row{
+    display: flex;
+    align-items: center;
+}
+.in_1{
+    width: 28%;
+}
+.input-row22{
+    justify-content: space-between;
+    width: 72%;
+}
+
+/* 인풋 스타일 */
+.underline-input {
+    border: none;
+    padding: 10px 0;
+    width: 100%;
+    background: transparent;
+    outline: none;
+    transition: border-bottom 0.3s ease-in-out;
+    font-size: 18px;
+}
+.input-group2{
+    text-align: center;
+    width: 50%;
+}
+.input-group2 .label_1{
+    font-size: 45px;
+    font-weight: 600;
+}
+.input-group2 p{
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.input-row_wrap img{
+    width: 29px;
+    height: 29px;
+}
+.input-group{
+    width: 19.8%;
+}
+.input-row_wrap{
+    display: flex;
+    border-bottom: 2px solid #ccc;
+    gap: 10px;
+    align-items: center;
+}
+
+.start{
+    width: 38%;
+}
+
+.underline-input:focus {
+    border-bottom: 2px solid #1E409A;
+}
+
+/* 검색 버튼 */
+.search-button {
+    background-color: #1E409A;
+    color: #fff;
+    border: none;
+    width: 138px;
+    border-radius: 12px;
+    cursor: pointer;
+    height: 56px;
+    font-size: 18px;
+}
+
+.search-button:hover {
+    background-color: #1E409A;
+}
+.input-group>label{
+    font-size: 14px;
+    font-weight: 400;
+}
+.input-group>.label_1{
+    font-size: 45px;
+    font-weight: 600;
+}
+
+
+/* 나이 계산기 */
+.calculator-link {
+    text-decoration: underline;
+    margin-top: 10px;
+}
+
+.calculator-link a {
+    color: #000000;
+    font-weight: 400;
+    font-size: 18px;
+}
+/* 섹션2 */
+/* 하단 콘텐츠 */
+.con_wrap{
+    width: 100%;
+    background-color: #1E409A;
+    height: 130px;
+    color: #fff;
+    display: flex;
+}
+
+.content-wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 100px;
+}
+
+/* 출발전 미리체크 */
+.checklist {
+    background-color: #003D82; /* 타이틀 박스 배경 */
+    width: 25%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.checklist h2 {
+    font-size: 30px;
+    margin-bottom: 8px;
+}
+
+.checklist p {
+    font-size: 18px;
+    opacity: 0.8;
+}
+
+/* 정보 박스 */
+.info-box {
+    display: flex;
+    width: 70%;
+    gap: 70px;
+}
+.info-item >.tre{
+    width: 10px;
+    height: 10px;
+}
+.sp_wrpa{
+    display: flex;
+    align-items: center;
+}
+
+.info-item {
+    padding: 0 5px;
+    width: 18%;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    position: relative; 
+    padding-bottom: 8px; 
+    justify-content: space-between;
+}
+.info-item::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;  
+    height: 1px; 
+    background-color: #ffffff; 
+}
+
+.info-item img {
+    width: 29px;
+    height: 29px;
+    margin-right: 10px;
+}
+
+.info-item span {
+    font-size: 18px;
+}
+
+/* 마우스 호버 효과 */
+span:hover {
+    transform: scale(1.1);
+}
+/* 섹션2번 메인 콘텐츠 */
+/* 섹션 2 전체 레이아웃 */
+.slider-2 {
+    margin-top: 110px;
+    width: 81.5%;
+    box-sizing: border-box;
+}
+
+.slider-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    overflow: hidden; 
+}
+
+.slider-wrapper {
+    width: 100%;
+    display: flex;
+    overflow: hidden; 
+    padding: 15px 4px;
+}
+
+.additional-slider {
+    display: flex;
+    gap: 0;  /* 간격 최적화 */
+    transition: transform 0.5s ease;
+}
+.slide:last-child {
+    margin-right: 0;
+}
+/* 슬라이드 개별 항목 */
+.slide {
+    flex: 0 0 calc(22% - 17px);
+    /* max-width: 25%; */ 
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 5px 8px 18px rgba(0, 0, 0, 0.1);
+    padding: 10px 10px 20px 10px;
+    margin-right: 24px;
+}
+
+.slide img {
+    width: 100%;
+    height: 180px;
+    border-radius: 15px;
+}
+
+
+/* 타이틀 스타일 */
+.titles {
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    margin-left: 15px;
+}
+.slide-content{
+    margin-left: 12px;
+    margin-top: 15px;
+}
+.p_2{
+    margin: 10px 0;
+
+}
+
+.slide-content .con_tate {
+    font-size: 26px;
+    font-weight: 600;
+}
+.trip-date{
+    display: flex;
+    align-items: center;
+}
+
+.arrow_1 {
+    font-size: 12px;
+    color: rgb(0, 0, 0, 0.5);
+    margin: 0 10px 0 10px;
+}
+
+.trip-date > h4 {
+    font-size: 20px;
+    font-weight: 400;
+    color: rgb(0, 0, 0);
+}
+
+.price {
+    display: flex;
+    align-items: center;
+    margin-top: 16%;
+}
+
+.price > h3 {
+    font-size: 28px;
+    font-weight: 600;
+    margin-left: 15px;
+}
+
+/* 화살표 버튼 스타일 */
+.slide-btn {
+    position: absolute; 
+    width: 48px;
+    height: 48px;
+    cursor: pointer;
+    top: 70%;
+    transform: translateY(-70%);
+    z-index: 10; 
+    background-color: #1E409A;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.prev-btn {
+    left: 5%; 
+}
+.next-btn {
+    right: 5%;
+}
+/* 섹션３ */
+#section_3{
+    margin-top: 150px;
+    background-color: #1E409A;
+    box-shadow: inset 0 14px 10px rgb(0, 0, 0, 0.2);
+    height: 784px;
+}
+.w-btn{
+    background-color: #fff;
+    box-shadow: 5px 8px 18px rgba(0, 0, 0, 0.1);
+    
+}
+.tt_2{
+    color: #fff;
+}
+.titles２{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    margin-left: 15px;
+}
+/* 섹션4 */
+#section_4_custom{    
+    width: 100%;    
+    margin-top: 150px; 
+    position: relative;
+    padding-bottom: 30px;        
+}
+#section_4_custom .custom-swiper-container {
+    width: 80%;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;  
+    border-radius: 20px;  
+}
+
+#section_4_custom .custom-swiper-wrapper {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    padding: 20px 10px;
+    
+}
+
+#section_4_custom .custom-swiper-slide {
+    min-width: 49%;  /* 한 번에 2개씩 보이도록 설정 */
+    height: 384px;
+    box-sizing: border-box;
+    position: relative;
+    margin-right: 22px;  
+    
+}
+
+#section_4_custom .custom-swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 5px 8px 18px rgba(5, 8, 20, 0.2); 
+}
+
+/* 페이지네이션 스타일 */
+#section_4_custom .custom-swiper-container {
+    position: relative;
+    overflow: hidden; /* 넘치는 요소 숨기기 */
+}
+
+#section_4_custom .custom-swiper-pagination {
+    position: absolute;
+    bottom: -30px;          
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 15px;              
+}
+
+#section_4_custom .dot {
+    width: 12px;            
+    height: 12px;             
+    background-color: #B0BEC5;  
+    border-radius: 50px;     
+    cursor: pointer;
+    transition: background-color 0.3s ease, width 0.3s ease;
+}
+
+#section_4_custom .dot.active {
+    background-color: #1E409A; 
+}
+/* 섹션5 */
+#section_5 {
+    margin-top: 150px;
+    background-image: url('../img/sky.png'); /* 배경 이미지 추가 */
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    padding: 60px 0;
+    text-align: center;
+}
+.product-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.product-title {
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 50px;
+    color: #ffffff;
+}
+
+.product-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.product-card {
+    background-color: rgb(255, 255, 255, 0.8);
+    color: #000;
+    width: 180px;
+    height: 240px;
+    border-radius: 12px;
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    text-align: center; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  
+    align-items: center;      
+}
+
+.product-card img {
+    width: 75px;
+    height: 75px;
+    margin: 0 auto 30px; 
+    display: block; 
+}
+
+.product-card h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.product-card p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.4;
+}
+.img_min{
+    display: none;
+}
+/* 섹션6 */
+#section_6 {
+    margin-top: 150px;
+    width: 100%;
+    background-color: #ffffff;
+    padding: 0 7.4%;
+    box-sizing: border-box;
+}
+
+.notice-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.notice-left {
+    flex: 1;
+    min-width: 300px;
+}
+
+.notice-left h2 {
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.notice-left p {
+    font-size: 28px;
+    font-weight: 400;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+.notice-left .more-link {
+    font-size: 18px;
+    text-decoration: none;
+    color: #1E409A;
+    font-weight: 600;
+}
+
+.notice-right {
+    flex: 1.5;
+}
+
+.notice-right ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.notice-right li {
+    display: flex;
+    justify-content: space-between;
+    padding: 18px 0;
+    border-bottom: 1px solid #ddd;
+    font-size: 16px;
+}
+
+.notice-right .date {
+    color: #888;
+}
+/* 푸터 */
+/* 푸터 전체 스타일 */
+#footer {
+    color: #ffffff;
+    box-sizing: border-box;
+    margin-top: 130px;
+}
+
+/* 푸터 상단 영역 */
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 40px 9% 30px 9%;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+    background-color: #002d72;
+}
+
+/* 섹션 제목 스타일 */
+.footer-section h4 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+.footer-section li {
+    font-size: 15px;
+    margin-bottom: 20px;
+    color: #d1d1d1;
+    transition: color 0.3s ease;
+}
+
+.footer-section li:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+
+/* 시스템 점검 안내 */
+.footer-section p {
+    font-size: 15px;
+    color: #d1d1d1;
+    line-height: 2;
+}
+
+/* 푸터 하단 바 */
+.footer-bottom {
+    text-align: left;
+    padding: 40px 7.4%  40px  7.4%;
+    font-size: 15px;
+    color: #d1d1d1;
+    background-color: #182F6B;
+}
+
+/* 푸터 아이콘 스타일 */
+.footer-icons {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.footer_1 img {
+    width: 36px;
+    height: 36px;
+    margin-left: 20px;
+}
+.footer_1 :nth-child(1){
+    margin-left: 0;
+}
+
+.flogo{
+    width: 134px;
+    height: 46px;
+}
+.footer-bottom h3{
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 2;
+    margin-bottom: 30px;
+}
+.footer_1{
+    display: flex;
+    align-items: center;
+}
+.footer_2{
+    margin-left: 15px;
+    display: flex;
+    align-items: center;
+}
+/*  */
+
+@media (max-width: 1280px) {
+    /* #section_5 .product-grid {  
+        gap: 15px;
+    } */
+    #section_5 {
+        padding: 60px 18.5%;
+    }
+
+    #section_5 .product-card {
+        width: 180px;
+    }
+    .product-container {
+        width: 100%;
+}
+}
+@media (max-width: 700px) {
+    #section_5 .product-grid {
+        gap: 20px;
+    }
+
+/*  */
+}
+@media (max-width: 1024px) {
+    
+    .footer-section h4 {
+        font-size: 16px;
+        margin-bottom: 13px;
+    }
+    
+    .footer-section li {
+        font-size: 14px;
+        margin-bottom: 18px;
+    }  
+    
+    /* 시스템 점검 안내 */
+    .footer-section p {
+        font-size: 14px;
+        color: #d1d1d1;
+        line-height: 2;
+    }
+  
+}
+
+@media (max-width: 768px) {
+    
+
+    .footer-section {
+        width: 34%;
+        text-align: left;
+    }
+
+    .footer_1 img {
+        width: 26px;
+        height: 26px;
+        margin-left: 15px;
+    }
+    
+    .footer-bottom h3 {
+        font-size: 14px;
+    }
+    .footer-container {
+        padding: 40px 0% 30px 9%;
+    }
+
+
+}
+
+@media (max-width: 510px) {
+    .footer_1{
+        width: 57%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .footer_2{
+        margin-left: 15px;
+        display: flex;
+        align-items: center;
+    }
+}
+@media (max-width: 480px) {
+
+
+    .footer-section h4 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .footer-section li, .footer-section p {
+        font-size: 12px;
+    }
+
+    .footer-section li:first-child {
+        font-size: 14px;
+    }
+
+    .footer_1 img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .footer-bottom {
+        padding-top: 15px;
+    }
+    .footer-container {
+        padding: 40px 0% 30px 8%;
+    }
+    .footer-section {
+        width: 36%;
+    }
+}
+
+
+
+/* 반응형 설정 */
+@media (max-width: 1480px) {
+    /* 섹션4 */
+   #section_4_custom .custom-swiper-slide {
+       height: 344px;
+       margin-right: 20px;
+   }
+   #section_4_custom .custom-swiper-container {
+    width: 85%;
+    }
+}
+@media (max-width: 1420px) {
+    .notice-left h2 {
+        font-size: 42px;
+    }
+
+    .notice-left p {
+        font-size: 26px;
+    }
+    .more-link{
+        font-size: 17px;
+    }
+    .notice-right li {
+        padding: 14px 0;
+    }
+}
+
+@media (max-width:1400px){
+    /* 타이틀 */
+    .hero-text h1 {
+        font-size: 46px;
+        margin-bottom: 8px;
+    }
+    .hero-text p {
+        font-size: 26px;
+
+    }
+    /* 섹션1 티켓 배경 */
+    .booking-content {
+        height: 286px;
+        padding: 48px 25px;
+    }
+    /* 검색 버튼 */
+    .search-button {
+        width: 118px;
+        border-radius: 12px;
+        height: 54px;
+        font-size: 17px;
+    }
+    /* 밑에 3콘 스타일일 */
+    .underline-input {
+        font-size: 16px;
+    }
+    .input-row_wrap {
+        border-bottom: 1.5px solid #ccc;
+        gap: 8px;
+    }
+/* 출 도착 콘 */
+    .input-group2 .label_1 {
+        font-size: 42px;
+    }
+    .input-group2 {
+        width: 40%;
+    }
+    /* 섹션2 */
+    .titles {
+        font-size: 48px;
+        margin-bottom: 12px;
+        
+    }
+    .titles２ {
+        font-size: 28px;
+       
+    }
+    /* 섹션5 */
+    .product-title {
+        font-size: 48px;
+        margin-bottom: 50px;
+
+    }
+    
+    
+   
+}
+@media (max-width: 1380px) {
+    /* 섹션2 콘텐츠 */
+    .info-item span {
+        font-size: 17px;
+    }
+    .info-item img {
+        width: 26px;
+        height: 26px;
+        margin-right: 8px;
+    }
+    /*  섹션4 */
+    
+
+}
+
+/* 반응형 레이아웃 */
+@media (max-width:1300px){
+    #section_1 {
+        height: 70vh;
+    }
+    /* 섹션1 티켓 배경 */
+    .booking-content {
+        padding: 48px 20px;
+    }
+    /* 검색 버튼 */
+    .search-button {
+        width: 110px;
+        height: 48px;
+        font-size: 16px;
+    }
+    /* 밑에 3콘 스타일일 */
+    .underline-input {
+        font-size: 15px;
+    }
+    .input-row_wrap {
+        border-bottom: 1.5px solid #ccc;
+        gap: 7px;
+    }
+/* 출 도착 콘 */
+    .input-group2 .label_1 {
+        font-size: 40px;
+    }
+    .input-group2 {
+        width: 40%;
+    }
+}
+
+@media (max-width: 1280px) {
+    /* 섹션4 */
+    #section_4_custom .custom-swiper-slide {
+        min-width: 48.8%;  
+        height: 334px;
+        box-sizing: border-box;
+        position: relative;
+        
+    }
+    .slide-btn{
+        display: none;
+    }
+    
+}
+@media (max-width: 1240px) {
+    .notice-container {
+        flex-direction: column;
+    }
+
+    .notice-left, .notice-right {
+        width: 100%;
+    }
+    .notice-left, .notice-right {
+        margin-bottom: 40px;
+    }
+    .product-title {
+        font-size: 44px;
+        width: 100%;
+        margin-bottom: 50px;
+    }
+}
+@media (max-width: 1178px) {
+    /* 섹션2 콘텐츠 */
+    .info-item span {
+        font-size: 16px;
+    }
+    .info-item img {
+        width: 22px;
+        height: 22px;
+        margin-right: 8px;
+    }
+}
+@media (max-width: 1110px) {
+    /* 섹션2 */
+    .content-wrapper {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .checklist {
+        width: 100%;      
+        text-align: center;
+        height: 120px;
+    }
+
+    .info-box {
+        flex-wrap: wrap;  
+        justify-content: space-between;
+        gap: 15px;
+        width: 82%;
+    }
+
+    .info-item {
+        width: 44%;
+    }
+    .con_wrap{
+        height: 230px;
+    }
+    .con_wrap {
+        height: 265px;
+
+    
+    }
+    /* 슬라이드 */
+    .slide img {
+        width: 100%;
+        height: 180px;
+        border-radius: 10px;
+    }
+    .slide-content .con_tate {
+        font-size: 23px;
+    }
+    .trip-date > h4 {
+        font-size: 18px;
+    }
+    h4 {
+        font-size: 16px;
+        font-weight: 400;
+    }
+    .price > h3 {
+        font-size: 25px;
+        margin-left: 12px;
+    }
+   
+}
+
+@media (max-width:1045px){
+       /* 헤더 */
+.header-top{
+    display: none;
+}
+.logo ul{
+    display: none;
+}
+.header-below {
+    height: 50px;
+    padding: 0 2.8%;
+}
+.logo img {
+    width: 92px;
+    height: 28px;
+}
+.header_img {
+    gap: 8px;
+}
+.header_img img {
+    width: 30px;
+    height: 30px;
+}
+.h_1{
+    display: block;
+}
+.h_2{
+    display: none;
+}
+/* 섹션1 */
+    /* 타이틀 */
+    .hero-text {
+    display: none;
+    }
+    /* 티켓배경*/
+    .booking-content {
+        height: 480px;
+        padding: 48px 25px;
+    }
+
+    /*상단콘 */
+    .tabs button {
+        border-radius: 0 0;
+        border: none;
+        padding: 12px 20px;
+        width: 25%;
+        height: 54px;
+        border-left: 1.5px dashed rgba(250, 250, 250, 0.4);
+    }
+    .booking-content {
+        padding: 34px 42px  28px 42px ;
+    }
+
+    /* 콘 내용 */
+    .calculator-link a {
+        display: none;
+    }
+    .booking-type {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .booking_btn {
+        width: 210px;
+        height: 40px;
+    }
+    .booking_btn :nth-child(2) {
+        font-size: 16px;
+        border: none;
+        margin-left: 16px;
+    }
+    .booking-type .active_3 {
+        text-align: center;
+        height: 40px;
+        width: 94px;
+        font-size: 15px;
+    }
+    .trip-options :nth-child(1) {
+        margin-left: 30px;
+    }
+    
+    .trip-options a {
+        font-size: 16px;
+        
+    }
+    /* 중단콘 */
+    .in_1 {
+        width: 100%;
+        justify-content: center;
+        border-bottom: 2px dashed rgba(0, 0, 0, 0.4); 
+        padding-bottom: 18px;  
+        margin-bottom: 12px;   
+    }
+    .booking-content_1 {
+        flex-direction: column;
+    }
+    .input-row22 {
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        gap: 15px;
+    }
+    .start {
+        width: 100%;
+    }
+    .input-group {
+        width: 100%;
+    }
+    /* 검색 버튼 */
+    .search-button {
+        width: 100%;
+        height: 42px;
+        font-size: 18px;
+    }
+    /* 섹션2 */
+    .titles {
+        font-size: 46px;
+        
+    }
+    .titles２ {
+        font-size: 28px;
+       
+    }
+    /* 섹션5 */
+    .product-title {
+        font-size: 44px;
+        margin-bottom: 50px;
+
+    }
+    
+    .slide {
+        padding: 12px;
+        width: 170px;
+        margin-right:20px;
+    }
+    .slide-content .con_tate {
+        font-size: 23px;
+        font-weight: 600;
+    }
+    .slide img {
+        height: 160px;
+    }
+    
+    .trip-date > h4 {
+        font-size: 18px;
+        font-weight: 400;
+        color: rgb(0, 0, 0);
+    }
+    h4 {
+        font-size: 16px;
+        font-weight: 400;
+    }
+    .price > h3 {
+        font-size: 25px;
+        font-weight: 600;
+        margin-left: 15px;
+    }
+    /* 섹션2 */
+    .slider-2 {
+        margin-top: 90px;
+    }
+    /* 섹션3 */
+    #section_3 {
+        margin-top: 130px;
+        height: 700px;
+    }
+    #section_4_custom{
+        margin-top: 130px;
+    }
+    
+    #section_5 {
+        margin-top: 130px;
+    }
+
+
+
+    /* 섹션4 */
+    #section_4_custom .custom-swiper-slide {
+        min-width: 48.3%;
+        }
+        /* 섹션5 */
+        #section_5 {
+            padding: 60px 11.5%;
+        }
+    .product-title {
+        font-size: 42px;
+        margin-bottom: 50px;
+
+    }
+    /* 섹션6 */
+    .section_6{
+        margin-top: 130px;
+    }
+}
+@media (max-width: 950px) {
+    /* 섹션4 */
+    #section_4_custom .custom-swiper-slide {
+        min-width: 100%;  /* 모바일에서는 한 번에 1장씩 표시 */
+    }
+    /* 섹션2 */
+    .titles {
+        font-size: 44px;
+        
+    }
+    .titles２ {
+        font-size: 26px;
+       
+    }
+    
+    
+}
+@media (max-width:810px){
+    /* 섹션5 */
+    .product-card h3 {
+        font-size: 18px;
+        margin-bottom: 13px;
+    }
+    .product-card p {
+        font-size: 16px;
+        line-height: 18px;
+    }
+    #section_5 {
+        padding: 30px 6%;
+    
+    }
+        
+        
+}
+@media (max-width: 768px) {
+    .notice-left h2 {
+        font-size: 34px;
+    }
+
+    .notice-left p {
+        font-size: 22px;
+    }
+    .more-link{
+        font-size: 14px;
+    }
+
+    .notice-right li {
+        font-size: 15px;
+        padding: 14px 0;
+    }
+    .slider-2 {
+        width: 91.5%;
+    }
+}
+
+@media (max-width:632px){
+    /* 섹션1 */
+    .tabs button {
+        font-size: 16px;
+        font-weight: 400;
+    }
+    /* 배경패딩 */
+    .booking-content {
+        padding: 34px 20px 28px 20px;
+    }
+    /* 파란 버튼 */
+    .booking_btn {
+        width: 190px;
+        height: 38px;
+    }
+    .booking-type .active_3 {
+        height: 38px;
+        width: 90px;
+        font-size: 14px;
+    }
+    .booking_btn :nth-child(2) {
+        font-size: 15px;
+        margin-left: 7px;
+    }
+    .trip-options a {
+        font-size: 15px;
+    }
+    .trip-options :nth-child(1) {
+        margin-left: 28px;
+    }
+    /* 섹션2 */
+    .checklist h2 {
+        font-size: 28px;
+    }
+    .additional-slider {
+        display: flex;
+    }
+    /* 섹션2 */
+    .slide {
+        padding: 10px;
+        width: 150px;
+    }
+    /* 섹션2 */
+    .titles {
+        font-size: 40px;
+        
+    }
+    /* 섹션5 */
+    .product-title {
+        font-size: 40px;
+
+    }
+    .titles２ {
+        font-size: 24px;
+       
+    }
+ 
+}/* 632px end */
+@media (max-width: 580px) {
+    .notice-left, .notice-right {
+        margin-bottom: 30px;
+    }
+    .notice-right li {
+        font-size: 14px;
+        padding: 13px 0;
+        line-height: 18px;
+    }
+}
+
+@media (max-width:571px){
+    /* 섹션1 */
+    #section_1 {
+        height: 70vh;
+    }
+    .underline-input {
+        padding: 8px 0;
+    }
+    .tabs button {
+        font-size: 14px;
+        font-weight: 400;
+        padding: 10px 18px;
+    }
+    .background-image {
+        padding: 8% 4%;
+    }
+    /* 배경패딩 */
+    .booking-content {
+        height: 455px;
+        padding: 18px 15px 18px 15px;
+    }
+    /* 파란 버튼 */
+    .booking_btn {
+        width: 170px;
+        height: 34px;
+    }
+    .booking-type .active_3 {
+        height: 34px;
+        width: 80px;
+        font-size: 14px;
+    }
+    .booking_btn :nth-child(2) {
+        font-size: 14px;
+        margin-left: 7px;
+    }
+    .trip-options a {
+        font-size: 14px;
+    }
+    .trip-options :nth-child(1) {
+        margin-left: 20;
+    }
+    .trip-options {
+        gap: 20px;
+    }
+    .additional-slider .slide_1 {
+        margin-left: 4px;
+    }
+    .slide {
+        padding: 6px;
+        width: 275px;
+        margin-right: 12px;
+    }
+    /* 섹션2 */
+    .slide {
+        padding: 6px;
+        width: 275px;
+    }
+    .slide-content .con_tate {
+        font-size: 18px;
+        font-weight: 600;
+    }
+    
+    .trip-date > h4 {
+        font-size: 14px;
+        font-weight: 400;
+        color: rgb(0, 0, 0);
+    }
+    h4 {
+        font-size: 14px;
+        font-weight: 400;
+    }
+    .price > h3 {
+        font-size: 20px;
+        font-weight: 600;
+        margin-left: 15px;
+    }
+    .slide img {
+        width: 100%;
+        height: 154px;
+    }
+    .slide {
+        padding: 10px;
+        width: 150px;
+    }
+    /* 섹션2 */
+    .titles {
+        font-size: 38px;
+        
+    }
+    /* 섹션5 */
+    .product-title {
+        font-size: 38px;
+        margin: 40px auto;
+        width: 90%;
+
+    }
+    .titles２ {
+        font-size: 22px;
+       
+    }
+    #section_4_custom {
+        padding-bottom: 10px;
+    }
+    /* 섹션2 */
+    .slider-2 {
+        margin-top: 80px;
+    }
+    
+    /* 섹션3 */
+    #section_3 {
+        margin-top: 100px;
+        height: 650px;
+    }
+    #section_4_custom{
+        margin-top: 100px;
+    }
+    /* 섹션4 버튼 */
+    #section_4_custom .dot {
+        width: 10px;
+        height: 10px;
+        
+    }
+    .img_min1{
+        display: none;
+    }
+    .img_min{
+        display: block;
+    }
+    /* 섹션5 */
+    .product-card h3 {
+        font-size: 16px;
+        margin-bottom: 11px;
+    }
+    .product-card p {
+        font-size: 14px;
+        line-height: 16px;
+    }
+    #section_5 {
+    padding: 50px 30px;
+    
+    }
+    .product-card {
+        width: 155px;
+        height: 205px;
+            
+    }
+    .product-grid {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        flex-wrap: wrap;    
+        
+    }
+    .product-card img {
+        width: 65px;
+        height: 65px;
+        margin: 0 auto 20px;
+    }
+    /* 섹션6 */
+    #section_6{
+        margin-top: 100px;
+    }
+    #section_5{
+        margin-top: 100px;
+    }
+    #footer {
+        margin-top: 100px;
+    }
+    .flogo {
+        width: 114px;
+        height: 41px;
+    }
+
+   
+    
+}/* 571px end */
+@media (max-width: 500px) {
+    .notice-right .date {
+        margin-left: 20px;
+    }
+}
+@media (max-width:450px){
+    #section_5 {
+        padding: 50px 10px;
+        
+        }
+        /* 섹션4 */
+        /* 섹션4 버튼 */
+    #section_4_custom .dot {
+        width: 8px;
+        height: 8px;
+        
+    }
+    #section_5 .product-card {
+        width: 160px;
+
+    }
+}
+@media (max-width:406px){
+    .footer_2{
+        margin-top: 15px;
+    }
+}
+@media (max-width:410px){
+    .trip-options :nth-child(1) {
+        margin-left: 15px;
+    }
+    .trip-options {
+        display: flex;
+        gap: 10px;
+    }
+    .booking_btn {
+        width: 160px;
+        height: 34px;
+    }
+    .booking_btn :nth-child(2) {
+        margin-left: 4px;
+    }
+    .booking-type .active_3 {
+        height: 34px;
+        width: 76px;
+    }
+    .slide {
+        padding: 12px;
+        width: 140px;
+    }
+    #section_4_custom {
+        padding-bottom: 10px;
+    }
+    .titles {
+        width: 80%;
+    }
+    .footer_2{
+        margin-left: 0;
+    
+    }
+    .footer_1 {
+        width: 25%;
+
+    }
+    .footer-section {
+        width: 44%;
+    }
+}
